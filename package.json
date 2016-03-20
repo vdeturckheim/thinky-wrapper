@@ -1,0 +1,34 @@
+{
+  "name": "thinky-wrapper",
+  "version": "0.0.0",
+  "description": "a wrapper for thinky",
+  "main": "index.js",
+  "scripts": {
+    "test": "lab -cL -t 100 -a code",
+    "prepublish": "npm test && nsp check && npm-check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vdeturckheim/thinky-wrapper.git"
+  },
+  "keywords": [
+    "rethink",
+    "rethinkdb",
+    "thinky"
+  ],
+  "author": "vdeturckheim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vdeturckheim/thinky-wrapper/issues"
+  },
+  "homepage": "https://github.com/vdeturckheim/thinky-wrapper#readme",
+  "peerDependencies": {
+    "thinky": "x.x.x"
+  },
+  "devDependencies": {
+    "code": "^2.1.1",
+    "lab": "^10.3.0",
+    "npm-check": "^4.1.4",
+    "nsp": "^2.2.1"
+  }
+}
